@@ -1,0 +1,5 @@
+<%= content_for :pdfjs do %>
+  <%= javascript_tag do %>
+    window.DEFAULT_URL = '<%= @pdfjs_file.html_safe %>';
+  <% end %>
+<% end %>
